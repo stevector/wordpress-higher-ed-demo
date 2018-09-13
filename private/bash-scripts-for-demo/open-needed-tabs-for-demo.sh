@@ -18,3 +18,4 @@ open -a /Applications/Firefox.app \
     $(terminus wp hed-creative-writing.live --  user one-time-login admin) \
     $(terminus wp hed-creative-writing.live --  user one-time-login admin) \
     $(terminus wp hed-creative-writing.live --  user one-time-login admin)
+
