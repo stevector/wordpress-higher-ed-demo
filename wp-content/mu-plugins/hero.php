@@ -30,6 +30,13 @@ class EDU_Demo_Hero_Header extends WP_Widget {
         parent::__construct( 'edu_demo_hero_header', __( 'EDU Demo hero header' ), $widget_ops );
     }
 
+    public function cta_text() {
+       // return 'Apply now to join our next freshman class';
+       return 'Get your study on in 2019';
+    }
+
+
+
     public function widget( $args, $instance ) {
 
         if (!empty($_SERVER['PANTHEON_SITE_NAME'])) {
@@ -41,7 +48,7 @@ class EDU_Demo_Hero_Header extends WP_Widget {
 //        $pantheon_site_machine_name = 'hed-creative-writing';
   //      $pantheon_site_machine_name = 'hed-anthropology';
 //        $pantheon_site_machine_name = 'hed-ee';
-
+        $cta = $this->cta_text();
         $background_position = 'center';
         $padding = "pt-5 pb-5";
         $height= "auto";
@@ -65,7 +72,7 @@ class EDU_Demo_Hero_Header extends WP_Widget {
             $columns = 'col-md-12';
             $image = "shutterstock_320092919.jpg";
             $background_position= 'bottom';
-            $height= "800px";
+            $height= "600px";
 
         } else {
             $h1 = "Preparation for Tomorrow";
@@ -75,13 +82,13 @@ class EDU_Demo_Hero_Header extends WP_Widget {
             $padding = "pt-3 pb-5";
             $columns = 'col-md-5';
         }
-        echo '<div class="jumbotron jumbotron-fluid bg-primary" style="height: '. $height . '; background-image: url(http://dev-alumni-magazine.pantheonsite.io/sites/default/files/images/' . $image . '); background-repeat: no-repeat; background-position: '. $background_position . '; background-size: cover" >
+        echo '<div class="jumbotron jumbotron-fluid bg-primary" style="height: '. $height . '; background-image: url(https://dev-alumni-magazine.pantheonsite.io/sites/default/files/images/' . $image . '); background-repeat: no-repeat; background-position: '. $background_position . '; background-size: cover" >
 <div class="container ' . $padding.'">
 	<div class="row">
 		<div class="' . $columns . ' bg-transparent-white">
 <h1 class="display-3">'.$h1 .'</h1>
 	<p class="lead">'. $lead . '</p>
-<a class="btn btn-department-highlight btn-lG" href="#">Apply Now</a><br/>
+<a class="btn btn-department-highlight btn-lG" href="#">'. $cta . '</a><br/>
 <a class="btn btn-sm btn-link" href="#" role="button">See our majors</a>
 <a class="btn btn-sm btn-link" href="#" role="button">Course list</a>
 </div>
