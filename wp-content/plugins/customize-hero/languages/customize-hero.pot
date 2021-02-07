@@ -1,0 +1,90 @@
+# Copyright (C) 2017 Andrew Taylor, Weston Ruter, Daniel Bachhuber
+# This file is distributed under the GPL3+.
+msgid ""
+msgstr ""
+"Project-Id-Version: Customize Hero 0.1.0\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/plugin/customize-hero\n"
+"POT-Creation-Date: 2017-01-19 17:09:51+00:00\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"PO-Revision-Date: 2017-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"X-Generator: grunt-wp-i18n 0.5.4\n"
+"X-Poedit-KeywordsList: "
+"__;_e;_x:1,2c;_ex:1,2c;_n:1,2;_nx:1,2,4c;_n_noop:1,2;_nx_noop:1,2,3c;esc_"
+"attr__;esc_html__;esc_attr_e;esc_html_e;esc_attr_x:1,2c;esc_html_x:1,2c;\n"
+"Language: en\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Poedit-Country: United States\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-Basepath: ../\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-Bookmarks: \n"
+"X-Textdomain-Support: yes\n"
+
+#. Plugin Name of the plugin/theme
+msgid "Customize Hero"
+msgstr ""
+
+#: inc/class-customize-hero-options.php:76
+#: inc/class-customize-hero-options.php:91
+msgid "Customize Hero Options"
+msgstr ""
+
+#: inc/class-customize-hero-options.php:90
+msgid "Hero Options"
+msgstr ""
+
+#: inc/class-customize-hero-options.php:183
+msgid "Background Color"
+msgstr ""
+
+#: inc/class-customize-hero-options.php:194
+msgid "Title Text"
+msgstr ""
+
+#: inc/class-customize-hero-options.php:205
+msgid "Title Font Size"
+msgstr ""
+
+#: inc/class-customize-hero-options.php:222
+msgid "Title Text Color"
+msgstr ""
+
+#: inc/class-customize-hero-options.php:232
+msgid "Description Text"
+msgstr ""
+
+#: inc/class-customize-hero-options.php:243
+msgid "Description Text Color"
+msgstr ""
+
+#: inc/class-customize-hero.php:98
+msgid "Setting does not have a default defined"
+msgstr ""
+
+#: inc/class-customize-hero.php:100
+msgid "Setting does not have min defined"
+msgstr ""
+
+#: inc/class-customize-hero.php:102
+msgid "Setting does not have max defined"
+msgstr ""
+
+#: inc/class-customize-hero.php:117
+msgid "Invalid font size; Must be within the min/max"
+msgstr ""
+
+#. Plugin URI of the plugin/theme
+msgid "https://github.com/ataylorme/customize-hero"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Allows WordPress sites to add a hero image or carousel via the customizer."
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Andrew Taylor, Weston Ruter, Daniel Bachhuber"
+msgstr ""

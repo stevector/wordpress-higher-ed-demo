@@ -1,0 +1,55 @@
+{
+  "name": "ataylorme/customize-hero",
+  "description": "Allows WordPress sites to add a hero image or carousel via the customizer.",
+  "type": "wordpress-plugin",
+  "license": "GPLv3 or later",
+  "authors": [
+    {
+      "name": "Andrew Taylor",
+      "email": "andrew@ataylor.me"
+    }
+  ],
+  "support": {
+    "issues": "https://github.com/ataylorme/customize-hero/issues"
+  },
+  "minimum-stability": "dev",
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    }
+  ],
+  "require-dev": {
+    "dealerdirect/phpcodesniffer-composer-installer": "~0.4.4",
+    "squizlabs/php_codesniffer": "~3.2.2",
+    "wp-coding-standards/wpcs": "~0.14.0"
+  },
+  "autoload": {
+    "classmap": [
+      "inc"
+    ]
+  },
+  "config": {
+    "preferred-install": "dist",
+    "optimize-autoloader": true,
+    "sort-packages": true
+  },
+  "scripts": {
+    "install-codestandards": [
+        "Dealerdirect\\Composer\\Plugin\\Installers\\PHPCodeSniffer\\Plugin::run"
+    ],
+    "post-install-cmd": [
+        "@install-codestandards"
+    ],
+    "code-sniff": [
+        "./vendor/bin/phpcs --extensions=php --standard=WordPress --ignore=*/tests/*,*/vendor/*,*/node_modules/* --runtime-set ignore_warnings_on_exit true ."
+    ],
+    "code-beautify": [
+        "./vendor/bin/phpcbf --extensions=php --standard=WordPress --ignore=*/tests/*,*/vendor/*,*/node_modules/* --runtime-set ignore_warnings_on_exit true ."
+    ],
+    "code-check": [
+        "@code-beautify",
+        "@code-sniff"
+    ]
+  }
+}
