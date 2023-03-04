@@ -15,9 +15,9 @@ function theme_enqueue_styles() {
 
 	// Get the theme data
 	$the_theme = wp_get_theme();
-    $css_file = '/css/child-theme.min.css';
-    wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() .$css_file, array(), sha1_file(__DIR__ . $css_file) );
-    wp_enqueue_script( 'jquery');
+	$css_file = '/css/child-theme.min.css';
+	wp_enqueue_style( 'child-understrap-styles', get_stylesheet_directory_uri() .$css_file, array(), sha1_file(__DIR__ . $css_file) );
+	wp_enqueue_script( 'jquery');
 	wp_enqueue_script( 'popper-scripts', get_template_directory_uri() . '/js/popper.min.js', array(), false);
     $js_file = '/js/child-theme.min.js';
 	wp_enqueue_script( 'child-understrap-scripts', get_stylesheet_directory_uri() . $js_file, array(), sha1_file(__DIR__ . $js_file), true );
@@ -28,9 +28,9 @@ function theme_enqueue_styles() {
 		wp_enqueue_script( 'favicon-updater', get_stylesheet_directory_uri() . $js_file, array(), sha1_file(__DIR__ . $js_file), true );
 	}
 
-    if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
-        wp_enqueue_script( 'comment-reply' );
-    }
+	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
+		wp_enqueue_script( 'comment-reply' );
+	}
 }
 
 function add_child_theme_textdomain() {
